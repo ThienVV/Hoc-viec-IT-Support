@@ -4,7 +4,7 @@
 
 **MariaDB là hệ quản trị cơ sở dữ liệu miễn phí được phát triển từ hệ quản trị cơ sở dữ liệu mã nguồn mở MySQL**. MariaDB được phát triển nhằm thay thế công nghệ cơ sở dữ liệu MySQL, vì thế nó tương thích và cho một hiệu suất cao hơn so với MySQL. Ưu điểm khi sử dụng MariaDB là gì?
 
-![image](https://user-images.githubusercontent.com/62273292/160368019-16268d64-3641-4592-9a6f-8276fad69269.png)
+
 
 MariaDB được Michael “Monty” Widenius, developer hàng đầu của MySQL dẫn dắt và phát triển. Ưu điểm lớn nhất của hệ quản trị này là tương thích với nhiều hệ điều hành, bao gồm Linux CentOS, Ubuntu và Window với các gói cài đặt tar, zip, MSI, rpm cho cả 32bit và 64bit với hiệu suất cao hơn so với MySQL. 
 
@@ -20,7 +20,7 @@ MariaDB có 2 bản trả phí và không cần trả phí. Tuy nhiên, với ph
 
 ## Ưu điểm của MariaDB là gì?
 
-![image](https://user-images.githubusercontent.com/62273292/160370307-7db726e3-f787-4740-8602-15ec130768db.png)
+
 
 
 Không phải ngẫu nhiên mà MariaDB được nhiều người yêu thích và sử dụng đến vậy. Những ưu điểm lớn nhất của hệ quản trị này phải kể đến bao gồm:
