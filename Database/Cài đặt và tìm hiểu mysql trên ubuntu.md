@@ -25,7 +25,6 @@ Quá trình hình thành và phát triển của MySQL được tóm tắt như 
 
 MySQL hiện nay có 2 phiên bản miễn phí (MySQL Community Server) và có phí (Enterprise Server).
 
-![image](https://user-images.githubusercontent.com/62273292/160376357-d08759c5-e50b-46c2-9702-244691cf4799.png)
 
 *MySQL là một hệ quản trị cơ sở dữ liệu quan hệ rất phổ biến hiện nay*
 
