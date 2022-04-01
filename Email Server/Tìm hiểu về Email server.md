@@ -16,5 +16,49 @@ Mail Server hoạt động dựa trên 3 giao thức cơ bản bao gồm:
 
 Outgoing Mail Server là gì?
 
+Outgoing Mail Server hay Mail Server gửi đi sử dụng giao thức SMTP (Simple Mail Transfer Protocol). Đây là giao thức dịch chuyển mail đơn giản được dùng để liên lạc với server từ xa. Đồng thời cho phép gửi nhiều thư cùng một lúc tới các server khác nhau.
+
+Incoming Mail Server là gì?
+
+Giao thức này hay còn được biết đến dưới 2 hình thức:
+
+- POP3 (Post Office Protocol phiên bản 3): chuyển email tới lưu ở máy tính chứa Mail Client, thường là nội bộ máy tính của người dùng thông qua một ứng dụng email như Outlook, Mac Mail, Windows Mail…
+
+
+- IMAP (Internet Message Access Protocol) là phương thức phức tạp hơn cho phép nhiều client cùng lúc kết nối tới một Mailbox. Email từ Mailbox sẽ được sao chép tới máy client và bản gốc của Email vẫn sẽ được lưu trên Mail Server.
+
+## Tính năng nổi bật của Mail Server
+
+![image](https://user-images.githubusercontent.com/62273292/161237513-35636ce4-a982-4b62-a1da-ff37e8d6d9cd.png)
+*Hệ thống Mail Server giúp ngăn chặn spam cho người dùng*
+
+**Mail Server** mang đến cho người dùng cá nhân và doanh nghiệp nhiều tính năng:
+
+- Cho phép người dùng khi gửi email hay nhận mail có thể thông qua Internet trực tiếp với những tên miền cụ thể của từng tổ chức.
+
+- Hạn chế tối đa các thư spam hoặc chứa virus.
+
+- Đảm bảo sự bảo mật thông tin nội bộ một cách chặt chẽ.
+
+- Có thể thiết lập dung lượng tối đa cho từng người dùng Mail Server.
+
+- Quản lý được toàn bộ nội dung mail của tất cả các thành viên thuộc hệ thống.
+
+- Thiết lập được chức năng sao lưu dữ liệu tự động. Đảm bảo thông tin cần thiết luôn tồn tại.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
