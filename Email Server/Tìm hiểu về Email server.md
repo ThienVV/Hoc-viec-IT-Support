@@ -30,6 +30,7 @@ Giao thức này hay còn được biết đến dưới 2 hình thức:
 ## Tính năng nổi bật của Mail Server
 
 ![image](https://user-images.githubusercontent.com/62273292/161237513-35636ce4-a982-4b62-a1da-ff37e8d6d9cd.png)
+
 *Hệ thống Mail Server giúp ngăn chặn spam cho người dùng*
 
 **Mail Server** mang đến cho người dùng cá nhân và doanh nghiệp nhiều tính năng:
@@ -45,6 +46,65 @@ Giao thức này hay còn được biết đến dưới 2 hình thức:
 - Quản lý được toàn bộ nội dung mail của tất cả các thành viên thuộc hệ thống.
 
 - Thiết lập được chức năng sao lưu dữ liệu tự động. Đảm bảo thông tin cần thiết luôn tồn tại.
+
+## Phân loại Mail Server
+
+Mail server có vai trò rất quan trọng với quá trình kinh doanh của doanh nghiệp
+
+- Mail Server Microsoft, Google là gì?
+
+Mail server Microsoft và Google là 2 cái tên lớn đại diện cho dịch vụ này. Nền tảng xây dựng loại server mail này có quy mô lớn, hệ thống bảo mật chặt chẽ. Có thể quản lý tốt những dữ liệu hiện có. Người dùng có thể sử dụng được nhiều tiện ích khác nhau. Cũng chính vì thế mà giá cả sử dụng dịch vụ server mail loại này thường khá cao. Ví dụ: Email 365 (Microsoft), G Suite (Google),….Tuy nhiên giá cả của các dịch vụ này thường rất đắt, giá trung bình khoảng 5USD/Email /tháng, nếu doanh nghiệp của bạn có số lượng email lớn thì chi phí duy trì hàng tháng rất lớn.
+
+- Mail Server độc lập là gì?
+
+Mail Server độc lập là hệ thống Mail Server được thiết kế cho các tổ chức hoặc ISP xử lý khối lượng thư lớn, yêu cầu kiểm soát và linh hoạt hơn đối với các dịch vụ thư. Nó bổ sung các tính năng như hợp tác, đồng bộ hóa Outlook, quản trị từ xa, Webmail và Quản trị Web nâng cao hơn và kết nối cơ sở dữ liệu, cung cấp cho bạn sức mạnh và kiểm soát cần thiết cho các hoạt động quy mô lớn
+
+## Các thuật ngữ thường đi kèm Mail Server
+
+- TLS Mail Server là gì?
+
+TLS là bảo mật tầng truyền tải (Transport Layer Security). TLS hoạt động cùng với tầng ổ bảo mật SHL (Secure Sockets Layer). Mục đích chính cung cấp phương thức vận chuyển mã hoá cho đăng nhập được chứng thực của SASL.
+
+- SASL Mail Server là gì?
+
+SASL là lớp xác thực và bảo mật đơn giản (Simple Authentication and Security Layer). Để xác thực người dùng. SASL thực hiện xác thực, sau đó TLS cung cấp vận chuyển mã hoá dữ liệu xác thực.
+
+- Webmail là gì?
+
+Webmail là email trên nền website. Một số webmail mà các bạn có thường thấy như hotmail, gmail, yahoo mail. Webmail cho phép người dùng truy cập email bất cứ lúc nào
+
+- SMTP-IN Queue là gì?
+
+Trước khi phân tán thư đến các Local queue hoặc Remote Queue, giao thức SMTP sẽ làm một thao tác sao lưu toàn bộ thư điện tử gửi đi từ email server của doanh nghiệp ở SMTP-IN Queue. Nói cách khác, SMTP-IN Queue chính là kho lưu trữ thông tin thư từ trước khi được gửi đi.
+
+- Webmail là gì?
+
+Webmail là email trên nền website. Một số webmail mà các bạn có thường thấy như hotmail, gmail, yahoo mail. Webmail cho phép người dùng truy cập email bất cứ lúc nào.
+
+- SMTP-IN Queue là gì?
+
+Trước khi phân tán thư đến các Local queue hoặc Remote Queue, giao thức SMTP sẽ làm một thao tác sao lưu toàn bộ thư điện tử gửi đi từ email server của doanh nghiệp ở SMTP-IN Queue. Nói cách khác, SMTP-IN Queue chính là kho lưu trữ thông tin thư từ trước khi được gửi đi.
+
+- Local Queue là gì?
+
+Sau khi tiếp nhận thông tin thư từ, hệ thống sẽ tự động điều phối phân loại và xếp thư từ theo thứ tự ngay hàng thẳng lối trước khi chuyến vào hộp thư của người nhận. Việc xếp hàng các bức thư chính là Local Queue.
+
+Để tăng cường khả năng bảo mật và giữ an toàn cho hệ thống email server, trước khi thư được gửi đến người dùng, local queue và remote queue sẽ tiến hành quét virut. Sau đó kiểm tra spam để chắc chắn về chất lượng thư gửi đi. Tránh trường hợp mail server bị các Blacklist liệt vào danh sách IP spam.
+
+- Local Mailboxes là gì?
+
+Local Mailboxes là hộp thư của các account có đăng kí tài khoản mail server của công ty.
+
+- Email Authentication là gì?
+
+Email Authentication là tính năng xác nhận danh tính của các user khi truy cập vào hộp thư email. Tính năng này giúp bạn bảo mật thông tin thư từ của chính mình. Nói cách khác Alternate Email là một dạng email dự phòng. Khi quên mật khẩu của mail server, bạn có thể sử dụng email này để giúp bạn lấy lại mật khẩu một cách nhanh chóng.
+
+- Mail Exchanger Record (MX) là gì?
+
+MX record có nhiệm vụ là chỉ đường cho email đi đến mail server của bạn. MX record thường đi kèm theo một A record sẽ trỏ về địa chỉ IP của mail server. Một thông số pref có giá trị số để chỉ ra mức độ ưu tiên của các mail server. Giá trị pref càng nhỏ thì mức độ ưu tiên càng cao.
+
+
+
 
 
 
