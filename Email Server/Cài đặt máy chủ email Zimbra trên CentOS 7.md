@@ -55,6 +55,9 @@ Sau khi download về hoàn tất bạn tiến hành giải nén file ra
 
 Cài mật khẩu
 
+![image](https://user-images.githubusercontent.com/62273292/161949529-191bf480-ce3e-4e4b-822e-19fe98ac0273.png)
+
+
 Mở Port Firewall
 
 ```
@@ -65,6 +68,9 @@ firewall-cmd --reload
 
 ![image](https://user-images.githubusercontent.com/62273292/161916801-9739bb2d-630e-4b00-bac9-b5eea94e7133.png)
 
+
+
+![image](https://user-images.githubusercontent.com/62273292/161935282-e0fc3e16-d24d-4d54-a8cb-f4306b84b818.png)
 
 ## Tạo domain thêm hostname
 
