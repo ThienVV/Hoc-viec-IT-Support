@@ -51,6 +51,19 @@ Sau khi download về hoàn tất bạn tiến hành giải nén file ra
 
 ![image](https://user-images.githubusercontent.com/62273292/161512593-a28614c1-21a1-4733-bf25-592f89d98ef8.png)
 
+![image](https://user-images.githubusercontent.com/62273292/161916201-dc046be5-ca68-4245-a731-00a3bd2467a8.png)
+
+Cài mật khẩu
+
+Mở Port Firewall
+
+```
+firewall-cmd --permanent --add-port={25,80,110,143,443,465,587,993,995,5222,5223,9071,7071}/tcp
+firewall-cmd --reload
+```
+
+
+![image](https://user-images.githubusercontent.com/62273292/161916801-9739bb2d-630e-4b00-bac9-b5eea94e7133.png)
 
 
 ## Tạo domain thêm hostname
