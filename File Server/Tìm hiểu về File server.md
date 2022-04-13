@@ -57,3 +57,24 @@ Việc xây dựng hệ thống File server thường hỗ trợ một vài hìn
 Trong các tổ chức lớn, nhiệm vụ này thường được phân cấp cho các directory service như openLDAP, eDirectory của Novell hoặc Active Directory của Microsoft.
 
 Các server này hoạt động trong môi trường máy tính phân tầng; xử lý user, máy tính, ứng dụng và file như các thành phần riêng biệt nhưng có liên quan đến nhau trên mạng; cấp quyền truy cập thông qua xác thực người dùng hoặc nhóm người dùng.
+
+
+## Các hình thức file server
+
+Nói đến chia sẻ dữ liệu tập trung hay còn gọi là file server thì chúng ta có nhiều hình thái khác nhau như :
+
++ Xây dựng máy chủ chạy trên nền tảng Linux or Windows Server
+
++ Hệ thống NAS
+
++ Giải pháp SAN
+
+
+
+
+
+
+
+
+
+
