@@ -11,4 +11,16 @@ Install-WindowsFeature NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clus
 
 ![image](https://user-images.githubusercontent.com/62273292/163136294-6d86df9f-cd7f-4bf2-81e4-9ed05f0c5be3.png)
 
+Download unified communications manage api 4.0 runtime
+
+![image](https://user-images.githubusercontent.com/62273292/163138003-d92ca62d-9580-4293-b30a-54af81e480ad.png)
+
+
+Sau khi tải về và khởi động
+
+![image](https://user-images.githubusercontent.com/62273292/163137852-faa4fc56-636a-47e8-bfad-66d9cd2c52e3.png)
+
+![image](https://user-images.githubusercontent.com/62273292/163138343-d0efe112-399c-48d1-b338-05f2a64f2091.png)
+
+Ấn next và restart windows server 2019
 
