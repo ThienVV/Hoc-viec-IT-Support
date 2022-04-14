@@ -47,11 +47,30 @@ Bước 9 - Nhấp vào Browse… và tìm thư mục bạn muốn chọn. Cuố
 
 ![image](https://user-images.githubusercontent.com/62273292/163302301-9c29f703-ad1f-45e9-8260-ab33fcf866d2.png)
 
+Tạo thư mục và cho phép share
+
+![image](https://user-images.githubusercontent.com/62273292/163336704-5310aba7-7833-4574-935b-56d2c6c57173.png)
+
+chọn thư mục
+
+![image](https://user-images.githubusercontent.com/62273292/163336973-108d2de4-5144-43f6-ac41-395155a1faf2.png)
+
+Tạo quota
+
+![image](https://user-images.githubusercontent.com/62273292/163337545-b7ea2bee-dbc3-4843-9844-03952ad8843f.png)
+
+Chọn save và nhấn ok
+
+![image](https://user-images.githubusercontent.com/62273292/163337705-7e8a127e-ef8f-45ff-94e7-58fe5f7824aa.png)
+
+Tạo thành công
+
+![image](https://user-images.githubusercontent.com/62273292/163338147-1ba4af83-e30b-4381-a9ea-b6e8181c982f.png)
 
 
+Tự tạo file 
 
-
-
+![image](https://user-images.githubusercontent.com/62273292/163338563-a38262f1-804c-40d1-a6de-39fb7b4b3234.png)
 
 
 
