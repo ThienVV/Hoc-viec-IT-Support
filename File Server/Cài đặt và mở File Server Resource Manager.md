@@ -1,4 +1,4 @@
-# cài đặt và mở File Server Resource Manager trong
+# Cài đặt và mở File Server Resource Manager trong
 
 ## Cách cài đặt File Server Resource Manager
 
