@@ -72,8 +72,17 @@ Tự tạo file
 
 ![image](https://user-images.githubusercontent.com/62273292/163338563-a38262f1-804c-40d1-a6de-39fb7b4b3234.png)
 
+Tạo file screen
+
+![image](https://user-images.githubusercontent.com/62273292/163342399-cb0c9cda-adc8-44ed-a314-a65f4c6dfb0f.png)
 
 
+![image](https://user-images.githubusercontent.com/62273292/163342634-367aab25-0473-400a-9c59-1fefa4ce6183.png)
+
+
+![image](https://user-images.githubusercontent.com/62273292/163342763-2afc029c-0369-435b-9a53-ea794d36d9d9.png)
+
+![image](https://user-images.githubusercontent.com/62273292/163342849-5ed870e2-ee52-41e6-8e64-9b01e4eec6d3.png)
 
 
 
