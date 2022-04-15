@@ -1,5 +1,8 @@
 # Cài đặt máy chủ email Zimbra trên CentOS 7
 
+## Tạo domain thêm hostname
+
+![image](https://user-images.githubusercontent.com/62273292/163558486-fd9ee3ec-09d5-4d63-9039-55c5bcf40c1d.png)
 
 
 
@@ -75,10 +78,14 @@ firewall-cmd --reload
 
 ![image](https://user-images.githubusercontent.com/62273292/161935282-e0fc3e16-d24d-4d54-a8cb-f4306b84b818.png)
 
-## Tạo domain thêm hostname
 
-![image](https://user-images.githubusercontent.com/62273292/161525047-42e7f38b-eb0e-4e49-adca-8802514939e3.png)
+Đăng nhập địa chỉ ip https://192.168.176.132:7071/
 
+![image](https://user-images.githubusercontent.com/62273292/163558723-647df287-910a-47b1-9d10-7212ac87466c.png)
+
+Đăng nhập thành công
+
+![image](https://user-images.githubusercontent.com/62273292/163558846-8a1ac637-a6c9-4d20-94a6-8e5d01c55eb5.png)
 
 
 
