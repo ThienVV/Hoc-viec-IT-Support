@@ -1,5 +1,8 @@
 # Cài đặt máy chủ email Zimbra trên CentOS 7
 
+
+
+
 Kiểm tra và cập nhật hệ thống
 
 ![image](https://user-images.githubusercontent.com/62273292/161475698-f4c0c469-442e-4cfa-b74d-da41ab11ab26.png)
@@ -80,7 +83,7 @@ firewall-cmd --reload
 
 
 
-
+link tham khảo https://dotrungquan.info/huong-dan-cai-dat-may-chu-email-zimbra-tren-centos-7/
 
 
 
