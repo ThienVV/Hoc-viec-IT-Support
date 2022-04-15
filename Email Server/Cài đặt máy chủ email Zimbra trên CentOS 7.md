@@ -19,11 +19,11 @@ Postfix là một phầm mềm nguồn mở được dùng để gửi mail (Mai
 
 Kiểm tra và set hostname
 
-![image](https://user-images.githubusercontent.com/62273292/161476432-78f166a5-2bca-4cf1-a905-9bb6cc624f2b.png)
+![image](https://user-images.githubusercontent.com/62273292/163560194-c12d3223-18fe-44a1-8644-fe864c1b18cb.png)
 
 Sau khi set hostname xong bạn thêm dòng sau vào file hosts bạn nhớ thay đổi IP bằng IP của bạn nha.
 
-![image](https://user-images.githubusercontent.com/62273292/161476885-3c1987ce-7dfa-4ec4-abad-59400e2add55.png)
+![image](https://user-images.githubusercontent.com/62273292/163560279-7099cfc9-5524-49d9-812c-5ef6b7d9f6d9.png)
 
 Cài đặt Zimbra
 
