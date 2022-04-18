@@ -1,10 +1,14 @@
 # Cấu hình zimbra
 
-Tạo thêm bản ghi TXT
+Tạo thêm bản ghi và tăng độ tin cậy cho thư gửi đi
 
-![image](https://user-images.githubusercontent.com/62273292/163792642-f0a3aa37-4c34-4d83-87d9-41a98fb95726.png)
+![image](https://user-images.githubusercontent.com/62273292/163795253-e26ad476-091b-4b38-abe8-312c5e035f62.png)
 
-![image](https://user-images.githubusercontent.com/62273292/163792670-5731e108-5052-4e35-8d5f-7abfae74dcfc.png)
+
+![image](https://user-images.githubusercontent.com/62273292/163795282-19e0e144-6ed6-477d-bfc5-684776f6fbe3.png)
+
+
+
 
 
 
