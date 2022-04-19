@@ -12,6 +12,7 @@ Tạo thêm bản ghi và tăng độ tin cậy cho thư gửi đi
 ## Mã Lỗi Trả về
 
 "Bạn đang sử dụng IP không được phép gửi email..."
+Hướng giải quyết: Cần xử lý IP
 
 Lỗi: 550-5.7.1
 
@@ -33,3 +34,4 @@ Thêm bản ghi
 
 ![image](https://user-images.githubusercontent.com/62273292/163920437-0c86f7f5-af78-4b0d-a5cb-161f480858bd.png)
 
+# Tìm hiểu về zimbra
