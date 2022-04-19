@@ -35,3 +35,37 @@ Thêm bản ghi
 ![image](https://user-images.githubusercontent.com/62273292/163920437-0c86f7f5-af78-4b0d-a5cb-161f480858bd.png)
 
 # Tìm hiểu về zimbra
+
+Tìm hiểu các tính năng trong zimbra
+
+## Thư
+
+**Hộp Thư đến**
+
+![image](https://user-images.githubusercontent.com/62273292/163922419-905abab1-4cf3-4488-94d2-8eaae238e587.png)
+
+**Hộp thư gửi**
+
+![image](https://user-images.githubusercontent.com/62273292/163922479-9177caf2-7f79-46fc-8a94-a4050d8e46fa.png)
+
+**Lần Lượt là các mục, giống ở Gmail thông thường**
+
+![image](https://user-images.githubusercontent.com/62273292/163922554-160d9632-1ed3-4679-8c7c-78500b82d15a.png)
+
+**Các zimlet**
+
+Dùng để lưu trữ dữ liệu, Webex, các biểu tượng yahoo
+
+![image](https://user-images.githubusercontent.com/62273292/163922686-e51415ea-b55c-4640-a602-5d575bd48881.png)
+
+
+## Danh Bạ
+
+![image](https://user-images.githubusercontent.com/62273292/163922798-2fad700c-6f1b-4db5-ad1c-e0c030ac8fa0.png)
+
+## Lịch
+
+## Công Việc 
+## Cặp tài liệu
+## Open Driver
+## Tùy chọn
