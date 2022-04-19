@@ -27,4 +27,7 @@ Thêm bản ghi
 
 ![image](https://user-images.githubusercontent.com/62273292/163916416-fdde7f86-327f-44b0-8d93-c01285bfb54a.png)
 
+![image](https://user-images.githubusercontent.com/62273292/163920359-7e599894-0b57-4867-aadf-f21b3e28f771.png)
+
+![image](https://user-images.githubusercontent.com/62273292/163920437-0c86f7f5-af78-4b0d-a5cb-161f480858bd.png)
 
