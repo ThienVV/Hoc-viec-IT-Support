@@ -11,7 +11,9 @@ Tạo thêm bản ghi và tăng độ tin cậy cho thư gửi đi
 
 ## Mã Lỗi Trả về
 
-550
+"Bạn đang sử dụng IP không được phép gửi email..."
+
+Lỗi: 550-5.7.1
 
 ![image](https://user-images.githubusercontent.com/62273292/163915142-fd120402-ad33-457c-9afb-887facaa9378.png)
 
