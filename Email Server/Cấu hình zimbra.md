@@ -74,9 +74,16 @@ Lịch hẹn gặp đối tác
 
 
 Thêm nhanh
+
 ![image](https://user-images.githubusercontent.com/62273292/164130999-b47ff492-3ec5-4bf5-95a9-75235739ce3d.png)
 
 ## Công Việc 
+
+![image](https://user-images.githubusercontent.com/62273292/164131501-9fb57384-e7a9-451d-887d-125f52a9431c.png)
+
+![image](https://user-images.githubusercontent.com/62273292/164131546-c1d059ea-7158-4cef-accc-c1638cf4efdf.png)
+
+
 ## Cặp tài liệu
 ## Open Driver
 ## Tùy chọn
