@@ -40,10 +40,12 @@ https://datatracker.ietf.org/doc/html/rfc3463
 
 **Về Phần MDaemon**
 
-+ Phải đăng ký tên miền
++ Phải đăng ký domain 
 
 
+**Về phần Exchang**
 
++
 
 
 
