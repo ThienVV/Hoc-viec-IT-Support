@@ -85,5 +85,10 @@ Thêm nhanh
 
 
 ## Cặp tài liệu
+
+![image](https://user-images.githubusercontent.com/62273292/164131784-5d380b0b-81ad-4929-911f-4710ec159efa.png)
+
+![image](https://user-images.githubusercontent.com/62273292/164131852-2f994bab-c634-4879-973e-8f5ea2b896cb.png)
+
 ## Open Driver
 ## Tùy chọn
