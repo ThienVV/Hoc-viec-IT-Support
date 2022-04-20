@@ -63,7 +63,18 @@ Dùng để lưu trữ dữ liệu, Webex, các biểu tượng yahoo
 
 ![image](https://user-images.githubusercontent.com/62273292/163922798-2fad700c-6f1b-4db5-ad1c-e0c030ac8fa0.png)
 
+![image](https://user-images.githubusercontent.com/62273292/164130805-93bc8904-242e-457d-9d23-836f418151eb.png)
+
+
 ## Lịch
+
+Lịch hẹn gặp đối tác
+
+![image](https://user-images.githubusercontent.com/62273292/164131233-1d01c707-be24-4784-a1eb-48380acbffd8.png)
+
+
+Thêm nhanh
+![image](https://user-images.githubusercontent.com/62273292/164130999-b47ff492-3ec5-4bf5-95a9-75235739ce3d.png)
 
 ## Công Việc 
 ## Cặp tài liệu
