@@ -79,6 +79,37 @@ Tài nguyên
 ![image](https://user-images.githubusercontent.com/62273292/164370950-e73ae093-b085-48aa-bce0-611c2751f2ba.png)
 
 
+**Cấu hình**
+
+Lớp dịch vụ 
+
+![image](https://user-images.githubusercontent.com/62273292/164372026-31ace997-363d-48cf-ab17-30f4182b204b.png)
+
+Tên Miền 
+
+![image](https://user-images.githubusercontent.com/62273292/164372047-c862bf28-943e-44e8-b401-cc8611478c18.png)
+
+Máy chủ 
+
+![image](https://user-images.githubusercontent.com/62273292/164372068-7000806a-86d7-4c7c-b0de-93e1ab445b54.png)
+
+Thiết lập chung
+
+![image](https://user-images.githubusercontent.com/62273292/164372145-c5ea24cb-64ef-44fc-a77e-cb9b3ca94d5e.png)
+
+Các zimlet
+
+![image](https://user-images.githubusercontent.com/62273292/164373370-c874b8dc-b481-485d-9b80-3da74d6ed18f.png)
+
+Phần mở rộng của quản trị viên
+
+![image](https://user-images.githubusercontent.com/62273292/164373394-157cc7d3-fb14-4077-8746-293ef8f0f306.png)
+
+Chứng chỉ
+
+![image](https://user-images.githubusercontent.com/62273292/164373413-e9092798-c1ab-40f7-b4cb-7797d83b2695.png)
+
+
 
 
 
