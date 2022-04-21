@@ -115,7 +115,62 @@ Tìm kiếm
 ![image](https://user-images.githubusercontent.com/62273292/164373517-3da9f46a-0139-4ce4-91f0-99e12ec3a283.png)
 
 
+# Tài khoản User
 
+## Thư
+
+**Hộp Thư đến**
+
+![image](https://user-images.githubusercontent.com/62273292/163922419-905abab1-4cf3-4488-94d2-8eaae238e587.png)
+
+**Hộp thư gửi**
+
+![image](https://user-images.githubusercontent.com/62273292/163922479-9177caf2-7f79-46fc-8a94-a4050d8e46fa.png)
+
+**Lần Lượt là các mục, giống ở Gmail thông thường**
+
+![image](https://user-images.githubusercontent.com/62273292/163922554-160d9632-1ed3-4679-8c7c-78500b82d15a.png)
+
+**Các zimlet**
+
+Dùng để lưu trữ dữ liệu, Webex, các biểu tượng yahoo
+
+![image](https://user-images.githubusercontent.com/62273292/163922686-e51415ea-b55c-4640-a602-5d575bd48881.png)
+
+
+## Danh Bạ
+
+![image](https://user-images.githubusercontent.com/62273292/163922798-2fad700c-6f1b-4db5-ad1c-e0c030ac8fa0.png)
+
+![image](https://user-images.githubusercontent.com/62273292/164130805-93bc8904-242e-457d-9d23-836f418151eb.png)
+
+
+## Lịch
+
+Lịch hẹn gặp đối tác
+
+![image](https://user-images.githubusercontent.com/62273292/164131233-1d01c707-be24-4784-a1eb-48380acbffd8.png)
+
+
+Thêm nhanh
+
+![image](https://user-images.githubusercontent.com/62273292/164130999-b47ff492-3ec5-4bf5-95a9-75235739ce3d.png)
+
+## Công Việc 
+
+![image](https://user-images.githubusercontent.com/62273292/164131501-9fb57384-e7a9-451d-887d-125f52a9431c.png)
+
+![image](https://user-images.githubusercontent.com/62273292/164131546-c1d059ea-7158-4cef-accc-c1638cf4efdf.png)
+
+
+## Cặp tài liệu
+
+![image](https://user-images.githubusercontent.com/62273292/164131784-5d380b0b-81ad-4929-911f-4710ec159efa.png)
+
+![image](https://user-images.githubusercontent.com/62273292/164131852-2f994bab-c634-4879-973e-8f5ea2b896cb.png)
+
+## Open Driver
+## Tùy chọn
 
 
 
