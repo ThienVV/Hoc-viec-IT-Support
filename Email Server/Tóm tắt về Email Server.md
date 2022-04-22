@@ -180,6 +180,11 @@ Thêm nhanh
 ![image](https://user-images.githubusercontent.com/62273292/164603981-a9e7709b-8573-42c8-8c0c-b941ae1e7774.png)
 
 
+## Nhật ký Logs 
+
+Nhật ký logs nằm ở phần trang chủ - quản lý - tài khoản
+
+![image](https://user-images.githubusercontent.com/62273292/164605745-5cd487b7-825c-419d-93d3-df3b2ef04d91.png)
 
 
 
