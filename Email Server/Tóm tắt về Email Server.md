@@ -190,9 +190,11 @@ Nhật ký logs nằm ở phần trang chủ - quản lý - tài khoản
 
 ![image](https://user-images.githubusercontent.com/62273292/164651036-72dda972-eebd-47dd-9c05-d3427968c09a.png)
 
+## KIỂM TRA LOG GỬI / NHẬN EMAIL ZIMBRA
 
+`/var/log/maillog`
 
-
+![image](https://user-images.githubusercontent.com/62273292/164673772-08695347-3d61-4623-bb0d-2cc5e8bca357.png)
 
 
 
