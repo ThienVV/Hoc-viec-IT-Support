@@ -173,6 +173,11 @@ Thêm nhanh
 ## Tùy chọn
 
 
+## Test thành công gửi nhận mail
+
+![image](https://user-images.githubusercontent.com/62273292/164603954-ee09fae7-83f9-44eb-b2d1-506ae6865ac4.png)
+
+![image](https://user-images.githubusercontent.com/62273292/164603981-a9e7709b-8573-42c8-8c0c-b941ae1e7774.png)
 
 
 
