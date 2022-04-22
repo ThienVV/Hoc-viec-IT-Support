@@ -186,8 +186,9 @@ Nhật ký logs nằm ở phần trang chủ - quản lý - tài khoản
 
 ![image](https://user-images.githubusercontent.com/62273292/164605745-5cd487b7-825c-419d-93d3-df3b2ef04d91.png)
 
+## Khắc phục lỗi k gửi được mail
 
-
+![image](https://user-images.githubusercontent.com/62273292/164651036-72dda972-eebd-47dd-9c05-d3427968c09a.png)
 
 
 
