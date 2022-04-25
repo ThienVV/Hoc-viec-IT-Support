@@ -1,9 +1,16 @@
  1 Cài đặt gói wget
+ 
  `yum install wget -y`
+ 
+ ![image](https://user-images.githubusercontent.com/62273292/165048130-71026762-526a-40cc-9e0f-06b09d69b6ef.png)
+
  
  2. Khai báo repo
 
 `yum install epel-release -y`
+
+![image](https://user-images.githubusercontent.com/62273292/165048400-f4c169c9-900e-481a-8951-ec7cc39894b5.png)
+
 
 3. Sử dụng wget để download check_mk
 
