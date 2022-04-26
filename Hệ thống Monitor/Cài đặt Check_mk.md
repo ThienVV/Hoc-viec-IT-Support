@@ -56,7 +56,7 @@ wget https://mathias-kettner.de/support/1.5.0p12/check-mk-raw-1.5.0p12-el7-38.x8
 
 9. Đăng nhập vào trang web bằng tài khoản admin
 
-http://192.168.80.222/monitoring/check_mk
+http://192.168.126.134/monitoring/check_mk
 
-![image](https://user-images.githubusercontent.com/62273292/165072187-9df29093-9e59-4042-9a87-eee6ffa1df2c.png)
+![image](https://user-images.githubusercontent.com/62273292/165355975-c0c95eb0-1273-4f57-abb4-29371a547cbf.png)
 
