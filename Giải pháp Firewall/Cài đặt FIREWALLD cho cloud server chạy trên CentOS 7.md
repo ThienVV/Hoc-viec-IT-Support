@@ -165,7 +165,9 @@ Kết quả cho thấy public là zone mặc định đang được kích hoạt
 
 
 a. Thiết lập cho Service
+
 Đây chính là điểm khác biệt của FirewallD so với Iptables – quản lý thông qua các services. Việc thiết lập tường lửa đã trở nên dễ dàng hơn bao giờ hết – chỉ việc thêm các services vào zone đang sử dụng.
+
 – Đầu tiên, xác định các services trên hệ thống:
 
 `firewall-cmd --get-services`
@@ -196,7 +198,9 @@ Ngay lập tức, zone “public” cho phép kết nối HTTP trên cổng 80. 
 ```
 
 b. Thiết lập cho Port
+
 Trong trường hợp bạn thích quản lý theo cách truyền thống qua Port, FirewallD cũng hỗ trợ bạn điều đó.
+
 – Mở Port với tham số --add-port:
 
 ```
@@ -237,68 +241,85 @@ firewall-cmd --zone=public --remove-port=9999/tcp --permanent
 
 ## Cấu hình nâng cao
 
+1. Tạo Zone riêng
 
-
-4. Cấu hình nâng cao
-4.1. Tạo Zone riêng
 Mặc dù, các zone có sẵn là quá đủ với nhu cầu sử dụng, bạn vẫn có thể tạo lập zone của riêng mình để mô tả rõ ràng hơn về các chức năng của chúng. Ví dụ, bạn có thể tạo riêng một zone cho webserver publicweb hay một zone cấu hình riêng cho DNS trong mạng nội bộ privateDNS. Bạn cần thiết lập Permanent khi thêm một zone.
 
+```
 # firewall-cmd --permanent --new-zone=publicweb
 success
 # firewall-cmd --permanent --new-zone=privateDNS
 success
 # firewall-cmd --reload
 success
+```
 
 ![image](https://user-images.githubusercontent.com/62273292/166648680-78764442-c35a-478a-b786-53710ff0dd8a.png)
 
 
 Kiểm tra lại
 
+```
 # firewall-cmd --get-zones
 block dmz drop external home internal privateDNS public publicweb trusted work
+```
+
 Khi đã có zone thiết lập riêng, bạn có thể cấu hình như các zone thông thường: thiết lập mặc định, thêm quy tắc… Ví dụ:
 
+```
 # firewall-cmd --zone=publicweb --add-service=ssh --permanent
 # firewall-cmd --zone=publicweb --add-service=http --permanent
 # firewall-cmd --zone=publicweb --add-service=https --permanent
-4.2. Định nghĩa services riêng trên FirewallD
+```
+2. Định nghĩa services riêng trên FirewallD
+
 Việc mở port trên tường lửa rất dễ dàng nhưng lại khiến bạn gặp khó khăn khi ghi nhớ các port và các services tương ứng. Vì vậy, khi có một services mới thêm vào hệ thống, bạn sẽ có 2 phương án:
 
 Mở Port của services đó trên FirewallD
+
 Tự định nghĩa services đó trên FirewallD
+
 Ví dụ, HocVPS Admin Port có thể là 2017, 9999 hay 4 chữ số bất kì nào đó. Bạn sẽ tự định nghĩa servies hocvps-admin với port 9999.
+
 – Tạo file định nghĩa riêng từ file chuẩn ban đầu
 
-# cp /usr/lib/firewalld/services/ssh.xml /etc/firewalld/services/hocvps-admin.xml
+`# cp /usr/lib/firewalld/services/ssh.xml /etc/firewalld/services/hocvps-admin.xml`
+
 – Chỉnh sửa để định nghĩa servies trên FirewallD
 
-# nano /etc/firewalld/services/hocvps-admin.xml
+`# nano /etc/firewalld/services/hocvps-admin.xml`
+
+```
 <?xml version="1.0" encoding="utf-8"?>
 <service>
 <short>HocVPS-Admin</short>
 <description>Control HocVPS Admin Web Tool</description>
 <port protocol="tcp" port="9999"/>
 </service>
+```
+
 – Lưu lại và khởi động lại FirewallD
 
 ![image](https://user-images.githubusercontent.com/62273292/166649235-7dacc99c-289e-47b5-ab45-49c63df6a287.png)
 
 
-# firewall-cmd --reload
+`# firewall-cmd --reload`
+
 – Kiểm tra lại danh sách services:
 
 ![image](https://user-images.githubusercontent.com/62273292/166649314-76a3b667-4e47-4c12-9e85-fb4411fb8aa4.png)
 
-# firewall-cmd --get-services
+`# firewall-cmd --get-services`
 
 ![image](https://user-images.githubusercontent.com/62273292/166649716-5b12d711-2282-43e9-9294-6c2a68a1d29a.png)
 
 
 Như vậy, hocvps-admin đã được thêm vào danh sách services của FirewallD. Bạn có thể thiết lập như các servies thông thường, bao gồm cả cho phép/chặn trong zone. Ví dụ:
 
+```
 # firewall-cmd --zone=public --add-service=hocvps-admin
 # firewall-cmd --zone=public --add-service=hocvps-admin --permanent
+```
 
 ![image](https://user-images.githubusercontent.com/62273292/166649875-39f85e09-b536-456e-b99e-5bbf3ce6d535.png)
 
