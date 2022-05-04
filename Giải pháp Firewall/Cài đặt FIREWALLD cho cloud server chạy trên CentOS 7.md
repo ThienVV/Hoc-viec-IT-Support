@@ -146,7 +146,7 @@ Trước khi thiết lập các quy tắc mới, hãy cùng HocVPS kiểm tra c�
 ![image](https://user-images.githubusercontent.com/62273292/166646210-b8f2208e-9b4c-40a2-a829-5820e107cd83.png)
 
 
-Kết quả cho thấy public là zone mặc định đang được kích hoạt, liên kết với card mạng eth0 và cho phép DHCP cùng SSH.
+Kết quả cho thấy public là zone mặc định đang được kích hoạt, liên kết với card mạng ens33 và cho phép DHCP cùng SSH.
 
 – Liệt kê toàn bộ các quy tắc trong một zone cụ thể, ví dụ home
 
