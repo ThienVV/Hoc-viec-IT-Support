@@ -66,6 +66,14 @@ Các tính năng của firwall có thể đảm trách
 
 **Tính năng VPN** Tính năng VPN cho phép doanh nghiệp triển khai hệ thống kết nối từ xa vào hệ thống máy chủ doanh nghiệp, cho phép nhân viên làm việc mọi lúc mọi nơi mà giống như đang ngồi trong công ty để làm việc, thông qua VPN mà máy tính của nhân viên được kết nối với hệ thống máy chủ của công ty một cách an toàn và tiện lời. hoặc cho phép kết nối nhiều chi nhánh lại với nhau mà không cần thuê leaseline.
 
+**Tính năng QoS:** tính năng này cho phép ưu tiên các dịch vụ cần được ưu tiên đi truyền tải ra ngoài internet. Ví dụ bạn đang dung hệ thống ERP đang đặt ở nước ngoài, hoặc bạn thuê Email server từ google, bạn muốn những dịch vụ này khi gửi hoặc nhận phải được nhanh nhất và hiệu quả nhất. Hệ thống firewall cho phép bạn làm điều này trên hệ thống để ưu tiên các gói tin của ERP hoặc Email chạy trước.
+
+**Tính năng chống Dos, DDos:** Tính năng này cho phép phát hiện các đợt tấn công của hacker vào hệ thống của bạn đồng thời khóa những dãy IP nào có khả năng gây hại cho hệ thống của bạn.
+
+**Tính năng cân bằng tải:** cho phép bạn sử dụng nhiều đường internet cùng một lúc, chia tải để đảm bảo tốc độ đường truyển tốt hơn.
+
+
+
 
 
 
