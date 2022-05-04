@@ -136,15 +136,24 @@ Trước khi thiết lập các quy tắc mới, hãy cùng HocVPS kiểm tra c�
 
 `firewall-cmd --list-all-zones`
 
+![image](https://user-images.githubusercontent.com/62273292/166646129-2dd8354e-a36a-4f3d-b49f-c7f17aa96fcb.png)
+
+
 - Liệt kê toàn bộ các quy tắc trong zone mặc định và zone active
 
 `firewall-cmd --list-all`
+
+![image](https://user-images.githubusercontent.com/62273292/166646210-b8f2208e-9b4c-40a2-a829-5820e107cd83.png)
+
 
 Kết quả cho thấy public là zone mặc định đang được kích hoạt, liên kết với card mạng eth0 và cho phép DHCP cùng SSH.
 
 – Liệt kê toàn bộ các quy tắc trong một zone cụ thể, ví dụ home
 
-`firewall-cmd --zone=home --list-all`
+`firewall-cmd --zone=home --list-all` 
+
+![image](https://user-images.githubusercontent.com/62273292/166647621-ced3d862-aab2-4c4e-bf06-20cf609ba47c.png)
+
 
 – Liệt kê danh sách services/port được cho phép trong zone cụ thể:
 
@@ -152,12 +161,17 @@ Kết quả cho thấy public là zone mặc định đang được kích hoạt
 # firewall-cmd --zone=public --list-services
 # firewall-cmd --zone=public --list-ports
 ```
+![image](https://user-images.githubusercontent.com/62273292/166647747-4e4bc669-e78f-4092-8b3b-1e6b0c3dd6b2.png)
+
 
 a. Thiết lập cho Service
 Đây chính là điểm khác biệt của FirewallD so với Iptables – quản lý thông qua các services. Việc thiết lập tường lửa đã trở nên dễ dàng hơn bao giờ hết – chỉ việc thêm các services vào zone đang sử dụng.
 – Đầu tiên, xác định các services trên hệ thống:
 
 `firewall-cmd --get-services`
+
+![image](https://user-images.githubusercontent.com/62273292/166647829-eb61dd8f-de31-41d6-bff0-6e4cd5f95142.png)
+
 
 Hệ thống thông thường cần cho phép các services sau: ssh(22/TCP), http(80/TCP), https(443/TCP), smtp(25/TCP), smtps(465/TCP) và smtp-submission(587/TCP)
 
@@ -166,6 +180,9 @@ Hệ thống thông thường cần cho phép các services sau: ssh(22/TCP), ht
 `# firewall-cmd --zone=public --add-service=http`
 
 `# firewall-cmd --zone=public --add-service=http --permanent`
+
+![image](https://user-images.githubusercontent.com/62273292/166647908-1f50484e-70cf-4a09-8e6c-205732bf7251.png)
+
 
 Ngay lập tức, zone “public” cho phép kết nối HTTP trên cổng 80. Kiểm tra lại
 
@@ -186,6 +203,8 @@ Trong trường hợp bạn thích quản lý theo cách truyền thống qua Po
 # firewall-cmd --zone=public --add-port=9999/tcp
 # firewall-cmd --zone=public --add-port=9999/tcp --permanent
 ```
+![image](https://user-images.githubusercontent.com/62273292/166648070-190fbf8d-859b-4852-b8f9-0c83422ed11d.png)
+
 
 Mở 1 dải port
 
@@ -194,6 +213,9 @@ Mở 1 dải port
 # firewall-cmd --zone=public --add-port=4990-5000/tcp --permanent
 
 ```
+![image](https://user-images.githubusercontent.com/62273292/166648156-a39802e2-5755-4a2c-95c4-4eb9a2641e96.png)
+
+
 
 Kiểm tra lại
 
@@ -201,6 +223,9 @@ Kiểm tra lại
 # firewall-cmd --zone=public --list-ports
 9999/tcp 4990-5000/tcp
 ```
+![image](https://user-images.githubusercontent.com/62273292/166648204-1cffffe8-b98c-4dd4-a942-21102ddaf161.png)
+
+
 
 – Đóng Port với tham số --remove-port:
 
@@ -214,7 +239,58 @@ firewall-cmd --zone=public --remove-port=9999/tcp --permanent
 
 
 
+4. Cấu hình nâng cao
+4.1. Tạo Zone riêng
+Mặc dù, các zone có sẵn là quá đủ với nhu cầu sử dụng, bạn vẫn có thể tạo lập zone của riêng mình để mô tả rõ ràng hơn về các chức năng của chúng. Ví dụ, bạn có thể tạo riêng một zone cho webserver publicweb hay một zone cấu hình riêng cho DNS trong mạng nội bộ privateDNS. Bạn cần thiết lập Permanent khi thêm một zone.
 
+# firewall-cmd --permanent --new-zone=publicweb
+success
+# firewall-cmd --permanent --new-zone=privateDNS
+success
+# firewall-cmd --reload
+success
+
+![image](https://user-images.githubusercontent.com/62273292/166648680-78764442-c35a-478a-b786-53710ff0dd8a.png)
+
+
+Kiểm tra lại
+
+# firewall-cmd --get-zones
+block dmz drop external home internal privateDNS public publicweb trusted work
+Khi đã có zone thiết lập riêng, bạn có thể cấu hình như các zone thông thường: thiết lập mặc định, thêm quy tắc… Ví dụ:
+
+# firewall-cmd --zone=publicweb --add-service=ssh --permanent
+# firewall-cmd --zone=publicweb --add-service=http --permanent
+# firewall-cmd --zone=publicweb --add-service=https --permanent
+4.2. Định nghĩa services riêng trên FirewallD
+Việc mở port trên tường lửa rất dễ dàng nhưng lại khiến bạn gặp khó khăn khi ghi nhớ các port và các services tương ứng. Vì vậy, khi có một services mới thêm vào hệ thống, bạn sẽ có 2 phương án:
+
+Mở Port của services đó trên FirewallD
+Tự định nghĩa services đó trên FirewallD
+Ví dụ, HocVPS Admin Port có thể là 2017, 9999 hay 4 chữ số bất kì nào đó. Bạn sẽ tự định nghĩa servies hocvps-admin với port 9999.
+– Tạo file định nghĩa riêng từ file chuẩn ban đầu
+
+# cp /usr/lib/firewalld/services/ssh.xml /etc/firewalld/services/hocvps-admin.xml
+– Chỉnh sửa để định nghĩa servies trên FirewallD
+
+# nano /etc/firewalld/services/hocvps-admin.xml
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+<short>HocVPS-Admin</short>
+<description>Control HocVPS Admin Web Tool</description>
+<port protocol="tcp" port="9999"/>
+</service>
+– Lưu lại và khởi động lại FirewallD
+
+# firewall-cmd --reload
+– Kiểm tra lại danh sách services:
+
+# firewall-cmd --get-services
+RH-Satellite-6 amanda-client amanda-k5-client bacula bacula-client bitcoin bitcoin-rpc bitcoin-testnet bitcoin-testnet-rpc ceph ceph-mon cfengine condor-collector ctdb dhcp dhcpv6 dhcpv6-client dns docker-registry dropbox-lansync elasticsearch freeipa-ldap freeipa-ldaps freeipa-replication freeipa-trust ftp ganglia-client ganglia-master high-availability hocvps-admin http https imap imaps ipp ipp-client ipsec iscsi-target kadmin kerberos kibana klogin kpasswd kshell ldap ldaps libvirt libvirt-tls managesieve mdns mosh mountd ms-wbt mssql mysql nfs nrpe ntp openvpn ovirt-imageio ovirt-storageconsole ovirt-vmconsole pmcd pmproxy pmwebapi pmwebapis pop3 pop3s postgresql privoxy proxy-dhcp ptp pulseaudio puppetmaster quassel radius rpc-bind rsh rsyncd samba samba-client sane sip sips smtp smtp-submission smtps snmp snmptrap spideroak-lansync squid ssh synergy syslog syslog-tls telnet tftp tftp-client tinc tor-socks transmission-client vdsm vnc-server wbem-https xmpp-bosh xmpp-client xmpp-local xmpp-server
+Như vậy, hocvps-admin đã được thêm vào danh sách services của FirewallD. Bạn có thể thiết lập như các servies thông thường, bao gồm cả cho phép/chặn trong zone. Ví dụ:
+
+# firewall-cmd --zone=public --add-service=hocvps-admin
+# firewall-cmd --zone=public --add-service=hocvps-admin --permanent
 
 
 
