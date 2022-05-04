@@ -2,8 +2,6 @@
 
 1. Bước 1: Dừng và vô hiệu hóa tường lửa.
 
-Để dừng và vô hiệu hoá Firewalld trên centos các bạn sử dụng 2 lệnh sau
-
 ```
 systemctl disable firewalld 
 systemctl stop firewalld
@@ -13,8 +11,6 @@ systemctl stop firewalld
 
 
 2. Bước 2: Cài đặt iptables.
-
-Sau khi đã dừng và vô hiệu hoá Firewalld chúng ta tiến hành cài đặt ibtables
 
 `yum -y install iptables-services`
 
@@ -60,7 +56,7 @@ Tiếp theo các bạn tiến hành cài đặt các thư viện cần thiết c
 
 4. Bước 4:  cài đặt CSF.
 
-Sau khi đã cài đặt đầy đủ các thư viện chúng ta tiến hành cài đặt CSF. Việc cài đặt diễn ra hết sức đơn giản với các lệnh dưới đây
+Sau khi đã cài đặt đầy đủ các thư viện chúng ta tiến hành cài đặt CSF.
 
 ```
 cd /opt
@@ -84,8 +80,7 @@ rm -rf /opt/csf /opt/csf.tgz
 ![image](https://user-images.githubusercontent.com/62273292/166623723-a985c1da-6413-4160-b8dd-01ce3a0995f9.png)
 
 
-Bây giờ chúng ta sẽ kiểm tra xem CSF có thực sự hoạt động trên máy chủ không. Chúng tôi sẽ làm một bài kiểm tra để xác minh.
-
+Bây giờ chúng ta sẽ kiểm tra xem CSF có thực sự hoạt động trên máy chủ không.
 ```
 cd /usr/local/csf/bin/
 perl csftest.pl
@@ -93,8 +88,7 @@ perl csftest.pl
 
 ![image](https://user-images.githubusercontent.com/62273292/166623803-9a1a70a4-d6a2-4fcb-b3d2-422f852e4e55.png)
 
-
-Nếu bạn thấy kết quả như hiển thị như bên dưới thì CSF sẽ hoạt động mà không gặp sự cố nào trên máy chủ của bạn.
+CSF sẽ hoạt động mà không gặp sự cố nào trên máy chủ của bạn.
 
 ```
 Testing ip_tables/iptable_filter...OK
@@ -114,7 +108,7 @@ RESULT: csf should function on this server
 
 5. Bước 5: Cấu hình CSF
 
-Tiếp theo, chúng ta sẽ cần cấu hình CSF bằng cách chỉnh sửa file /etc/csf/csf.confcsf.conf.
+Cấu hình CSF bằng cách chỉnh sửa file /etc/csf/csf.confcsf.conf.
 
 `nano /etc/csf/csf.conf`
 
