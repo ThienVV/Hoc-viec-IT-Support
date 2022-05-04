@@ -282,23 +282,34 @@ Ví dụ, HocVPS Admin Port có thể là 2017, 9999 hay 4 chữ số bất kì 
 </service>
 – Lưu lại và khởi động lại FirewallD
 
+![image](https://user-images.githubusercontent.com/62273292/166649235-7dacc99c-289e-47b5-ab45-49c63df6a287.png)
+
+
 # firewall-cmd --reload
 – Kiểm tra lại danh sách services:
 
+![image](https://user-images.githubusercontent.com/62273292/166649314-76a3b667-4e47-4c12-9e85-fb4411fb8aa4.png)
+
 # firewall-cmd --get-services
-RH-Satellite-6 amanda-client amanda-k5-client bacula bacula-client bitcoin bitcoin-rpc bitcoin-testnet bitcoin-testnet-rpc ceph ceph-mon cfengine condor-collector ctdb dhcp dhcpv6 dhcpv6-client dns docker-registry dropbox-lansync elasticsearch freeipa-ldap freeipa-ldaps freeipa-replication freeipa-trust ftp ganglia-client ganglia-master high-availability hocvps-admin http https imap imaps ipp ipp-client ipsec iscsi-target kadmin kerberos kibana klogin kpasswd kshell ldap ldaps libvirt libvirt-tls managesieve mdns mosh mountd ms-wbt mssql mysql nfs nrpe ntp openvpn ovirt-imageio ovirt-storageconsole ovirt-vmconsole pmcd pmproxy pmwebapi pmwebapis pop3 pop3s postgresql privoxy proxy-dhcp ptp pulseaudio puppetmaster quassel radius rpc-bind rsh rsyncd samba samba-client sane sip sips smtp smtp-submission smtps snmp snmptrap spideroak-lansync squid ssh synergy syslog syslog-tls telnet tftp tftp-client tinc tor-socks transmission-client vdsm vnc-server wbem-https xmpp-bosh xmpp-client xmpp-local xmpp-server
+
+![image](https://user-images.githubusercontent.com/62273292/166649716-5b12d711-2282-43e9-9294-6c2a68a1d29a.png)
+
+
 Như vậy, hocvps-admin đã được thêm vào danh sách services của FirewallD. Bạn có thể thiết lập như các servies thông thường, bao gồm cả cho phép/chặn trong zone. Ví dụ:
 
 # firewall-cmd --zone=public --add-service=hocvps-admin
 # firewall-cmd --zone=public --add-service=hocvps-admin --permanent
 
+![image](https://user-images.githubusercontent.com/62273292/166649875-39f85e09-b536-456e-b99e-5bbf3ce6d535.png)
 
 
 
 
 
 
+Nguồn tham khảo
 
+https://cloud.z.com/vn/support/cloud/thiet-lap-tuong-lua-firewalld-tren-centos-7/
 
 
 
