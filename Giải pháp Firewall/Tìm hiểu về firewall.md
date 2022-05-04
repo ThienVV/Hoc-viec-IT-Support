@@ -56,3 +56,37 @@ Việc có cho mình một giải pháp FireWall an toàn sẽ giúp bạn có �
 - Hạn chế hoặc ngăn chặn một số phần mềm như Zalo, yahoo chát, Viber chát, Line chat trong trong giờ làm việc.
 Và rất nhiều tính năng hưu ích khác
 
+## Tác dụng của Firewall
+
+Các tính năng của firwall có thể đảm trách
+
+**Tính năng webfilter:**  tính năng cho phép doanh nghiệp có thể kiểm duyệt, theo dõi và phân loại các website mà nhân viên hoặc một nhóm nhân viên có thể được sử dụng trong một khoảng thời gian được định sẵn. Cho phép hoặc ngăn chặn một hoặc một nhóm website theo mục đích quản lý của doanh nghiệp. Ví dụ: chặn sử dụng facebook, các website games, website người lớn trong giờ làm việc hoặc chỉ cho phép bộ phận marketing được sử dụng facebook trong giờ làm việc….
+
+**Lọc ứng dụng:** Ngăn chặn một số ứng dụng trên điện thoại, máy tính khi làm việc ở công ty: Hệ thống firewall có thể ngăn chặn một số ứng dụng như yahoo messenger, skype, zalo… hoặc ngăn chặn việc gửi file thông qua các ứng dụng chat trên, theo dõi kiểm duyệt các tin nhắn trên các ứng dụng chat nhằm ngăn chặn việc gửi các thông tin ra ngoài internet không an toàn.
+
+**Tính năng VPN** Tính năng VPN cho phép doanh nghiệp triển khai hệ thống kết nối từ xa vào hệ thống máy chủ doanh nghiệp, cho phép nhân viên làm việc mọi lúc mọi nơi mà giống như đang ngồi trong công ty để làm việc, thông qua VPN mà máy tính của nhân viên được kết nối với hệ thống máy chủ của công ty một cách an toàn và tiện lời. hoặc cho phép kết nối nhiều chi nhánh lại với nhau mà không cần thuê leaseline.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
