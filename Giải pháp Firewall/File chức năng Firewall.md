@@ -1,21 +1,21 @@
-# File có chức năng allow, deny, ignore(bypass) trong loại fw
+# File có chức năng allow, deny, ignore(bypass) trong loại Firewall
 
 Hành động quy tắc tường lửa
 
 Các quy tắc tường lửa có thể thực hiện các hành động sau:
 
-allow: Cho phép rõ ràng lưu lượng truy cập phù hợp với quy tắc đi qua, sau đó ngầm phủ nhận mọi thứ khác.
+**allow**: Cho phép rõ ràng lưu lượng truy cập phù hợp với quy tắc đi qua, sau đó ngầm phủ nhận mọi thứ khác.
 
-Bypass: Cho phép lưu lượng vượt qua cả tường lửa và phân tích ngăn chặn xâm nhập. Sử dụng cài đặt này cho các giao thức chuyên sâu về phương tiện hoặc cho lưu lượng truy cập bắt nguồn từ các nguồn đáng tin cậy. Quy tắc bỏ qua có thể dựa trên IP, cổng, hướng lưu lượng và giao thức.
+**Bypass:** Cho phép lưu lượng vượt qua cả tường lửa và phân tích ngăn chặn xâm nhập. Sử dụng cài đặt này cho các giao thức chuyên sâu về phương tiện hoặc cho lưu lượng truy cập bắt nguồn từ các nguồn đáng tin cậy. Quy tắc bỏ qua có thể dựa trên IP, cổng, hướng lưu lượng và giao thức.
 
-Deny: Chặn rõ ràng lưu lượng truy cập phù hợp với quy tắc.
+**Deny:** Chặn rõ ràng lưu lượng truy cập phù hợp với quy tắc.
 
-Force Allow: Buộc cho phép lưu lượng truy cập mà nếu không sẽ bị các quy tắc khác từ chối.
+**Force Allow:** Buộc cho phép lưu lượng truy cập mà nếu không sẽ bị các quy tắc khác từ chối.
  lưu ý: Lưu lượng truy cập được cho phép bởi quy tắc Force Allow sẽ vẫn được phân tích bởi mô-đun phòng chống xâm nhập.
 
-Log only: Lưu lượng truy cập sẽ chỉ được ghi lại. Không có hành động nào khác sẽ được thực hiện.
+**Log only**: Lưu lượng truy cập sẽ chỉ được ghi lại. Không có hành động nào khác sẽ được thực hiện.
 
-Tìm hiểu thêm về quy tắc Cho phép
+### Tìm hiểu thêm về quy tắc Cho phép
 
 Quy tắc cho phép có hai chức năng:
 
@@ -33,7 +33,7 @@ Các quy tắc Cho phép thường được áp dụng bao gồm:
 
 **Cho phép trả lời ICMP** được trưng cầu : Cho phép máy tính nhận câu trả lời cho tin nhắn ICMP của chính nó. Điều này hoạt động cùng với cấu hình trạng thái ICMP.
 
-Tìm hiểu thêm về quy tắc Bỏ qua
+### Tìm hiểu thêm về quy tắc Bỏ qua
 
 Quy tắc Bỏ qua được thiết kế cho các giao thức chuyên sâu về phương tiện hoặc cho lưu lượng truy cập bắt nguồn từ các nguồn đáng tin cậy mà việc lọc bằng tường lửa hoặc các mô-đun ngăn chặn xâm nhập là không bắt buộc hoặc không mong muốn.
 
@@ -45,9 +45,9 @@ Một gói phù hợp với các điều kiện của quy tắc Bỏ qua:
 
 Vì không áp dụng chế độ kiểm tra trạng thái đối với giao thông được bỏ qua, nên việc bỏ qua giao thông ở một hướng không tự động bỏ qua phản ứng theo hướng khác. Các quy tắc bỏ qua phải luôn được tạo và áp dụng theo cặp, một quy tắc cho lưu lượng truy cập đến và một quy tắc khác cho lưu lượng đi.
 
-lưu ý: Các sự kiện quy tắc bỏ qua không được ghi lại. Đây không phải là một hành vi có thể định cấu hình.
+**lưu ý**: Các sự kiện quy tắc bỏ qua không được ghi lại. Đây không phải là một hành vi có thể định cấu hình.
 
-Lưu ý thêm: Nếu Trình quản lý bảo mật sâu sử dụng cơ sở dữ liệu từ xa được Bảo vệ bởi Tác nhân bảo mật sâu , các cảnh báo sai liên quan đến phòng chống xâm nhập có thể xảy ra khi Trình quản lý bảo mật sâu lưu các quy tắc ngăn chặn xâm nhập vào cơ sở dữ liệu. Bản thân nội dung của các quy tắc có thể bị xác định nhầm là một cuộc tấn công. Một trong những giải pháp thay thế cho điều này là tạo quy tắc bỏ qua cho lưu lượng truy cập từ Trình quản lý bảo mật sâu đến cơ sở dữ liệu.
+**Lưu ý thêm:** Nếu Trình quản lý bảo mật sâu sử dụng cơ sở dữ liệu từ xa được Bảo vệ bởi Tác nhân bảo mật sâu , các cảnh báo sai liên quan đến phòng chống xâm nhập có thể xảy ra khi Trình quản lý bảo mật sâu lưu các quy tắc ngăn chặn xâm nhập vào cơ sở dữ liệu. Bản thân nội dung của các quy tắc có thể bị xác định nhầm là một cuộc tấn công. Một trong những giải pháp thay thế cho điều này là tạo quy tắc bỏ qua cho lưu lượng truy cập từ Trình quản lý bảo mật sâu đến cơ sở dữ liệu.
 
 Quy tắc bỏ qua mặc định cho lưu lượng truy cập Trình quản lý bảo mật sâu
 
@@ -67,7 +67,7 @@ Tuy nhiên, quy tắc này chấp nhận lưu lượng truy cập từ bất k�
 
 Quy tắc tùy chỉnh phải sử dụng các thông số trên để thay thế quy tắc mặc định. Tốt nhất, địa chỉ IP hoặc địa chỉ MAC của Trình quản lý bảo mật sâu thực tế nên được sử dụng làm nguồn gói cho quy tắc.
 
-Tìm hiểu thêm về quy tắc Buộc cho phép
+### Tìm hiểu thêm về quy tắc Buộc cho phép
 
 Tùy chọn Buộc cho phép loại trừ một tập hợp phụ lưu lượng truy cập có thể đã bị che bởi hành động Từ chối. Mối quan hệ của nó với các hành động khác được minh họa bên dưới. Buộc cho phép có tác dụng tương tự như quy tắc Bỏ qua. Tuy nhiên, không giống như Bypass, lưu lượng vượt qua tường lửa vì hành động này vẫn phải chịu sự kiểm tra của mô-đun phòng chống xâm nhập. Hành động Force Allow đặc biệt hữu ích để đảm bảo rằng các dịch vụ mạng thiết yếu có thể giao tiếp với máy tính DSA. Nói chung, các quy tắc Buộc cho phép chỉ nên được sử dụng cùng với Cho phép và các quy tắc Cho phép một tập hợp con lưu lượng truy cập đã bị cấm bởi các quy tắc Cho phép và Từ chối. Các quy tắc Buộc cho phép cũng được yêu cầu để Cho phép lưu lượng ICMP và UDP không mong muốn khi ICMP và UDP ở trạng thái ở trạng thái được bật.
 
@@ -98,6 +98,8 @@ b, **Buộc cho phép**
 c, **Phủ nhận**
 
 3. Quy tắc tường lửa với mức độ ưu tiên 2 (bình thường)
+
+
 a, **Đường vòng**
 
 b, **Buộc cho phép**
@@ -105,6 +107,8 @@ b, **Buộc cho phép**
 c, **Phủ nhận**
 
 4. Quy tắc tường lửa với mức độ ưu tiên 1 (thấp)
+
+
 a, **Đường vòng**
 
 b, **Buộc cho phép**
