@@ -73,7 +73,7 @@ Các tính năng của firwall có thể đảm trách
 **Tính năng cân bằng tải:** cho phép bạn sử dụng nhiều đường internet cùng một lúc, chia tải để đảm bảo tốc độ đường truyển tốt hơn.
 
 
-
+# Tìm hiểu các tham số trong firewall
 
 
 
