@@ -216,6 +216,7 @@ Các tham số này được lưu trữ trong phần [TAP] của tệp thuộc t
 
 
 link tham khảo (các tính năng ): https://help.deepsecurity.trendmicro.com/10_3/aws/Protection-Modules/Firewall/firewall-rule-action-priority.html
+
 link tham khảo (tham số tường lửa): https://www.ibm.com/docs/en/guardium/11.1?topic=parameters-firewall
 
 
