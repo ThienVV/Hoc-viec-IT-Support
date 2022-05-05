@@ -1,4 +1,4 @@
-# file có chức năng allow, deny, ignore(bypass) trong loại fw
+# File có chức năng allow, deny, ignore(bypass) trong loại fw
 
 Hành động quy tắc tường lửa
 
@@ -190,3 +190,36 @@ Cho phép
 lưu ý: Hãy nhớ rằng các hành động quy tắc thuộc loại Cho phép chỉ chạy ở mức ưu tiên 0 trong khi các hành động quy tắc thuộc loại Nhật ký Chỉ chạy ở mức ưu tiên 4.
 
 Lưu ý: Điều quan trọng cần nhớ là nếu bạn có quy tắc Buộc cho phép và quy tắc Từ chối ở cùng mức độ ưu tiên, quy tắc Buộc cho phép sẽ được ưu tiên hơn quy tắc Từ chối và do đó lưu lượng truy cập phù hợp với quy tắc Buộc sẽ được phép.
+
+
+# Tham số tường lửa
+
+Các tham số này ảnh hưởng đến hoạt động của S-TAP đối với tường lửa.
+
+Các tham số này được lưu trữ trong phần [TAP] của tệp thuộc tính S-TAP.
+
+
+
+
+
+
+
+link tham khảo (các tính năng ): https://help.deepsecurity.trendmicro.com/10_3/aws/Protection-Modules/Firewall/firewall-rule-action-priority.html
+link tham khảo (tham số tường lửa): https://www.ibm.com/docs/en/guardium/11.1?topic=parameters-firewall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
