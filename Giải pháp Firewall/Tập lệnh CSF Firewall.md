@@ -166,6 +166,7 @@ Adding 192.168.1.110 to csf.deny and iptables DROP...
 
 ```
 # csf -g ip
+```
 Ví dụ :
 ![image](https://user-images.githubusercontent.com/62273292/166865499-8e9a6590-08c6-430d-8667-81a81a76aba7.png)
 
