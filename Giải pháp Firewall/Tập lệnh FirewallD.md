@@ -8,7 +8,7 @@
 
 `systemctl stop firewalld`         # Stop the service`
 
-`systemctl disable firewalld      #disable the firewall`
+`systemctl disable firewalld      #vô hiệu hóa firewall`
 
 `firewall-cmd --state             #View the running status`
 
@@ -29,11 +29,7 @@ Cũng giống như các cổng TCP, chúng ta có thể mở cổng UDP để tr
 
 `firewall-cmd –zone = public –add-port = 443 / udp –permosystem`
 
-```
---add-port=80/tcp #Add port, this is used to specify which port/communication protocol has to open
---permanent        #Permanently effective, no failure after restarting this parameter
---zone            #Used to specific networking environments public, private or local
-```
+![image](https://user-images.githubusercontent.com/62273292/166889031-5166e080-d414-43d8-8d2e-b75c1f717db5.png)
 
 Configuration file:
 
