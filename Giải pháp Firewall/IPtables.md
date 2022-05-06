@@ -138,7 +138,8 @@ Bạn có thể xóa toàn bộ các quy tắc firewall mặc định để bắ
 
 Mình sẽ hướng dẫn các bạn xem và hiểu các quy tắc của iptables. Liệt kê các quy tắc hiện tại:
 
-# iptables -L
+`# iptables -L`
+
 
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination
@@ -179,10 +180,31 @@ target     prot opt source               destination
 
 3. Cách sử dụng Iptables để mở port VPS
 
+thiết lập một rule đơn giản vào IPtables bằng command:
+
+`iptables -A INPUT -i lo -j ACCEPT`
+
+Với ý nghĩa :
+
+-A INPUT: khai báo kiểu kết nối sẽ được áp dụng (-A nghĩa là Append).
+
+-i lo: Khai báo thiết bị mạng được áp dụng (-i < interface-name > nghĩa là Interface).
+
+-j ACCEPT: khai báo hành động sẽ được áp dụng cho quy tắc này (-j < target > nghĩa là Jump).
+
+Hoặc ta cùng xem một ví dụ sau :
+
+`iptables -A INPUT -s 0/0 -i ens33 -d 192.168.176.154 -p TCP -j ACCEPT`
+
+![image](https://user-images.githubusercontent.com/62273292/167113491-83f80cf0-220c-4ff2-b638-314fcd95cbdc.png)
+
+Với ý nghĩa : IPtables được cấu hình cho phép “firewall” chấp nhận các gói dữ liệu TCP, đến từ card mạng eth0, có bất kỳ địa chỉ IP nguồn đi đến địa chỉ 192.168.1.1 – là địa chỉ IP của firewall. 0/0 nghĩa là bất kỳ địa chỉ IP nào.
+
 
 Để mở port trong Iptables, bạn cần chèn chuỗi ACCEPT PORT. Cấu trúc lệnh để mở port xxx như sau:
 
 `# iptables -A INPUT -p tcp -m tcp --dport xxx -j ACCEPT`
+
 
 
 A tức Append – chèn vào chuỗi INPUT (chèn xuống cuối)
