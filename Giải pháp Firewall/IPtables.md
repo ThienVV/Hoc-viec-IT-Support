@@ -73,7 +73,7 @@ Một target (mục tiêu) sẽ được đưa ra khi có một gói tin đượ
 
 – Iptables thường được cài đặt mặc định trong hệ thống. Nếu chưa được cài đặt:
 
-CentOS: # yum install iptables
+CentOS: `# yum install iptables`
 
 CentOS 7 sử dụng FirewallD làm tường lửa mặc định thay vì Iptables. Nếu bạn muốn sử dụng Iptables thực hiện:
 
@@ -328,6 +328,109 @@ Hoặc
 `# service iptables save`
 
 iptables: Saving firewall rules to /etc/sysconfig/iptables:[ OK ]
+
+
+
+# Danh sách các lệnh iptables chính quản lý firewall iptables trên Linux
+
+1. Quản lý ‘chain’
+
+– Khởi tạo 1 chain mới.
+
+`# iptables -N new_chain`
+
+– Chỉnh sửa 1 chain, đổi tên chain.
+
+`# iptables -E new_chain old_chain`
+ 
+– Xoá 1 chain.
+
+`# iptables -X old_chain`
+
+**Thêm, sữa và xóa chain**
+
+![image](https://user-images.githubusercontent.com/62273292/167234152-343d05c1-58a4-4882-9aca-d69fd551edb7.png)
+
+ 
+– Chuyển hướng packet đến 1 chain được khởi tạo. Ví dụ dưới.
+
+`# iptables -A INPUT -p icmp -j new_chain`
+
+![image](https://user-images.githubusercontent.com/62273292/167234252-a12899c4-cb5b-4bc0-b33d-a65b22c9cb40.png)
+
+2. Liệt kê rule iptables
+
+– Liệt kê toàn bộ rules trong các chain, mặc định là table ‘filter‘.
+
+`# iptables -L`
+ 
+ ![image](https://user-images.githubusercontent.com/62273292/167234387-da84bb40-6c68-4364-b000-8ecc28f07649.png)
+
+– Liệt kê, kèm theo thông tin bộ đếm packet.
+
+`# iptables -L -v`
+ 
+ ![image](https://user-images.githubusercontent.com/62273292/167234402-037b15b0-dd78-4505-bb4c-c2650413b428.png)
+
+– Liệt kê thông tin rules-chain trong table cụ thể như NAT.
+
+`# iptables -L -t nat`
+ 
+– Liệt kê các rules với số thứ tự từng dòng rule của từng CHAIN. Mặc định vẫn là table ‘filter‘, nếu không chỉ định rõ table.
+
+`# iptables -L -n --line-numbers`
+ 
+– Liệt kê các rule cụ thể của chain cụ thể như INPUT với số dòng thứ tự.
+
+`# iptables -L INPUT -n --line-numbers`
+
+3. Quản lý rule trong chain
+
+– Mở rộng thêm 1 rule vào cuối danh sách rule của chain được chỉ định.
+
+`# iptables -A chain`
+ 
+– Thêm một 1 rule vào đầu danh sách các rule của chain được chỉ định.
+
+`# iptables -I chain [rulenum]`
+ 
+– Thay thế thông tin rule trong 1 chain được chỉ định với tham số cụ thể về dòng thứ tự rule cần thay thế.
+
+`# iptables -R chain rulenum`
+ 
+– Xoá bỏ 1 rule cụ thể của 1 chain được chỉ định, bạn nên nhớ chỉ định rõ số thứ tự dòng rule mà bạn muốn xoá nhé. Không thôi mặc định xoá rule số thứ tự 1 đấy.
+
+`# iptables -D chain rulenum`
+
+`# iptables -D chain`
+
+4. Thay đổi cấu hình rule mặc định cuối cùng
+
+– Thay đổi policy rule mặc định cuối cùng của 1 chain khi 1 packet không lọc được bởi bất kì rule nào đang tồn tại hoặc không tồn tại.
+
+`# iptables -P chain target`
+ 
+– Thay đổi các policy rule cuối cùng mặc định của 3 chain INPUT, OUTPUT, FORWARD thành DROP.
+
+```
+# iptables -P INPUT DROP
+# iptables -P OUTPUT DROP
+# iptables -P FORWARD DROP
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
