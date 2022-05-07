@@ -375,14 +375,23 @@ iptables: Saving firewall rules to /etc/sysconfig/iptables:[ OK ]
 – Liệt kê thông tin rules-chain trong table cụ thể như NAT.
 
 `# iptables -L -t nat`
+
+![image](https://user-images.githubusercontent.com/62273292/167234693-4c8147c3-27f2-44af-b6fe-230b74ed80a4.png)
+
  
 – Liệt kê các rules với số thứ tự từng dòng rule của từng CHAIN. Mặc định vẫn là table ‘filter‘, nếu không chỉ định rõ table.
 
 `# iptables -L -n --line-numbers`
  
+ ![image](https://user-images.githubusercontent.com/62273292/167235274-921db26e-f5dc-468b-8f60-027f824944f1.png)
+ 
 – Liệt kê các rule cụ thể của chain cụ thể như INPUT với số dòng thứ tự.
 
 `# iptables -L INPUT -n --line-numbers`
+
+
+![image](https://user-images.githubusercontent.com/62273292/167235320-059af21d-e563-48b2-b003-c94191ec263d.png)
+
 
 3. Quản lý rule trong chain
 
@@ -403,6 +412,14 @@ iptables: Saving firewall rules to /etc/sysconfig/iptables:[ OK ]
 `# iptables -D chain rulenum`
 
 `# iptables -D chain`
+
+Xóa hết các ruler trong chain và toàn bộ chain 
+
+`iptables -F`
+
+![image](https://user-images.githubusercontent.com/62273292/167237234-79b14713-2053-4b23-a5f2-2dfa2e9b45af.png)
+
+
 
 4. Thay đổi cấu hình rule mặc định cuối cùng
 
