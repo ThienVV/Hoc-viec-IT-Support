@@ -16,6 +16,21 @@
 	+ giống như mysql nhưng phải thao tác thủ công mới có thể import và export dữ liệu được.
 	+ không thể tự xuất database, hạn chế truy cập url từ những ip cố định
 - Cài đặt Phpmyadmin với apache trên CentOS 7:
+- Cài đặt Phpmyadmin với apache trên Ubuntu:
+
+**Email server**
+
+Giải pháp Email server phổ biến bao gồm: Microsoft exchange, MDaemon, Zimbra, Dịch vụ lưu trữ, Thư điện tử trên tên miền Google với email server có tính khôi phục dữ liệu cao, nhận mail thông qua tên miền cụ thể,...
+
+- Tìm hiểu và cài đặt zimbra:
+	+ zimbra có nhiều tính năng như: thư điện tử, lịch công tác, sổ địa chỉ cá nhân, danh mục công việc, tài liệu hồ sơ, chat trên nội bộ mạng lan hoặc trên internet
+	+ zimbra với tính năng bảo mật cao, có 2 phần mềm cho client: zimbra desktop và zimbra web client, zimbra còn hổ trợ làm việc trên di động.
+	+ Cài đặt máy chủ zimbra trên CentOS7: trước hết chúng ta cần tạo 1 domain rồi thiết lập DNS cần thiết để gửi mail.
+	+ Cấu hình cho zimbra: cần tăng độ tin cậy cho mail gửi đi: cụ thể là thêm các bản ghi thiết lập trong DNS 
+
+- Tìm hiểu và cài dặt MDaemon:
+	+ MDaemon là một giải pháp email server doanh nghiệp nổi tiếng canh tranh với microsoft exchange và giá rẻ hơn ở microsoft, cần triển khai 1 máy chủ và 1 ip riêng ổn định.
+	+ Cài đặt MDaemon trên windows server 2019: tải về và cài đặt.
 
 
 **Phần load balancing:**
