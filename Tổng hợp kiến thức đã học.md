@@ -20,7 +20,9 @@
 
 **Email server**
 
-Giải pháp Email server phổ biến bao gồm: Microsoft exchange, MDaemon, Zimbra, Dịch vụ lưu trữ, Thư điện tử trên tên miền Google với email server có tính khôi phục dữ liệu cao, nhận mail thông qua tên miền cụ thể,...
+Đã làm được:
+
+Giải pháp Email server phổ biến bao gồm: Microsoft exchange, MDaemon, Zimbra, Dịch vụ lưu trữ, Thư điện tử trên tên miền Google với email server có tính khôi phục dữ liệu cao, nhận mail thông qua tên miền cụ thể, cần cấu hình email server, nếu không sẽ ở trạng thái default sẽ không tối ưu cho sử dụng.
 
 - Tìm hiểu và cài đặt zimbra:
 	+ zimbra có nhiều tính năng như: thư điện tử, lịch công tác, sổ địa chỉ cá nhân, danh mục công việc, tài liệu hồ sơ, chat trên nội bộ mạng lan hoặc trên internet
@@ -31,6 +33,14 @@ Giải pháp Email server phổ biến bao gồm: Microsoft exchange, MDaemon, Z
 - Tìm hiểu và cài dặt MDaemon:
 	+ MDaemon là một giải pháp email server doanh nghiệp nổi tiếng canh tranh với microsoft exchange và giá rẻ hơn ở microsoft, cần triển khai 1 máy chủ và 1 ip riêng ổn định.
 	+ Cài đặt MDaemon trên windows server 2019: tải về và cài đặt.
+
+Chưa làm được:
+	+ Lỗi không gửi được mail do địa chỉ ip bị backlist (spam)
+
+**File Server**
+
+File server là một máy tính kết nối mạng để lưu hình ảnh ... các workstation (máy trạm) kết nối với máy chủ 
+
 
 
 **Phần load balancing:**
