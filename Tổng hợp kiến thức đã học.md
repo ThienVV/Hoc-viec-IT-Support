@@ -41,7 +41,8 @@ Chưa làm được:
 
 File server là một máy tính kết nối mạng để lưu hình ảnh ... các workstation (máy trạm) kết nối với máy chủ 
 
-
+- Mạng SAN là dùng để kết nối nhiều máy tính với nhau truyền tải dữ liệu qua lại với nhau. đặc biệt có thể khởi động trực tiếp từ san, thay đổi update khi đang sử dụng
+- Giao thức NFS dùng để chia sẻ các file
 
 **Phần load balancing:**
 
