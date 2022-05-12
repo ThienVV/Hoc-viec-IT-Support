@@ -51,6 +51,7 @@ Tường lửa chuỗi quy tắt (rules) ngăn cả sự  truy cập từ bên n
 - TCP: hổ trợ loại bỏ xây dượng thông tin internet
 - Http: dùng cho các website
 - SMTP: dùng để gửi thông tin định dạng văn bản
+- SMTPS: bảo mật thông tin ssl
 - TELNET: dùng để thực hiện 1 lệnh từ xa 
 - ICMP: trao đổi thông tin với các router
 
@@ -59,6 +60,8 @@ Tường lửa chuỗi quy tắt (rules) ngăn cả sự  truy cập từ bên n
 	+ bypass cho phép vượt qua tường lửa và phân tích ngăn chặn xâm nhập
 	+ deny chặn truy cập 
 	+ Log only lưu lượng truy cập được lưu lại
+- Iptables:
+	+ ứng dụng tường lửa, thiết lập quy tắc kiểm soát truy cập, 
 **Phần load balancing:**
 
 Đã tìm hiểu:
