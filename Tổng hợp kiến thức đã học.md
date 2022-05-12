@@ -54,6 +54,8 @@ Tường lửa chuỗi quy tắt (rules) ngăn cả sự  truy cập từ bên n
 - TELNET: dùng để thực hiện 1 lệnh từ xa 
 - ICMP: trao đổi thông tin với các router
 
+
+
 **Phần load balancing:**
 
 Đã tìm hiểu:
@@ -69,3 +71,5 @@ Tường lửa chuỗi quy tắt (rules) ngăn cả sự  truy cập từ bên n
 	+ layer 4: hoạt động trên dữ liệu tìm thấy của giao thức IP, TCP, FTP, UDP.
 	+ layer 7: phân phối các yêu cầu dựa trên dữ liệu được tìm thấy giữa các ứng dụng như http, giúp chạy nhiều webserver trên 1 domain và port.
 Chưa tìm hiểu: chưa cài đặt và cấu hình load balancing.
+
+Đưa ra khả năng tư duy xử lý vấn đề, trường hợp hướng giải quyết, dạng lỗi có hướng giải quyết, tư duy, giải quyết vấn đề, các câu lệnh nhiều k thể nhớ hết.
