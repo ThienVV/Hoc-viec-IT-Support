@@ -46,8 +46,13 @@ File server là một máy tính kết nối mạng để lưu hình ảnh ... c
 
 **Firewall**
 
-Tường lửa chuỗi quy tắt (rules) 
-
+Tường lửa chuỗi quy tắt (rules) ngăn cả sự  truy cập từ bên ngoài và kiểm soát truy cập.
+- FTP: dùng để tải tệp tin
+- TCP: hổ trợ loại bỏ xây dượng thông tin internet
+- Http: dùng cho các website
+- SMTP: dùng để gửi thông tin định dạng văn bản
+- TELNET: dùng để thực hiện 1 lệnh từ xa 
+- ICMP: trao đổi thông tin với các router
 
 **Phần load balancing:**
 
