@@ -54,8 +54,11 @@ Tường lửa chuỗi quy tắt (rules) ngăn cả sự  truy cập từ bên n
 - TELNET: dùng để thực hiện 1 lệnh từ xa 
 - ICMP: trao đổi thông tin với các router
 
-
-
+-File chức năng Firewall:
+	+ allow cho phép truy cập phù hợp
+	+ bypass cho phép vượt qua tường lửa và phân tích ngăn chặn xâm nhập
+	+ deny chặn truy cập 
+	+ Log only lưu lượng truy cập được lưu lại
 **Phần load balancing:**
 
 Đã tìm hiểu:
