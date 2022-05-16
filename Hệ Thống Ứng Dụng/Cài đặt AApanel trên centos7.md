@@ -18,3 +18,53 @@ https://192.168.176.157:7800/b9aff7a2
 ![image](https://user-images.githubusercontent.com/62273292/168505453-133eb604-9622-42f4-8996-1cecdb6b572d.png)
 
 ![image](https://user-images.githubusercontent.com/62273292/168505554-ad60d3df-9d2c-4670-98e3-c64827c7bbac.png)
+
+# hướng dẫn sử dụng
+
+## cài đặt thông báo với email
+
+Cài đặt one-click deployment
+![image](https://user-images.githubusercontent.com/62273292/168566627-9f75a0e2-7254-4bf5-892f-d7e03c2d82ff.png)
+
+![image](https://user-images.githubusercontent.com/62273292/168566757-b685d10b-136e-4a1e-a292-d1108de9f83f.png)
+
+thiết lập DNS:
+
+![image](https://user-images.githubusercontent.com/62273292/168567967-8d904537-1ec8-4510-8753-0e9847a97d11.png)
+
+submit
+
+![image](https://user-images.githubusercontent.com/62273292/168567907-e3f0aa1e-c85c-4cd2-9ebb-6eeb8e963ad7.png)
+
+hoàn tất lưu lại tk và mk
+
+![image](https://user-images.githubusercontent.com/62273292/168568111-abe952f1-6949-48b3-a16c-89e5785acfc5.png)
+
+lưu ý phải cài đặt mail server trước 
+
+đăng nhập với địa chỉ mail.vanthien97.xyz
+
+![image](https://user-images.githubusercontent.com/62273292/168568647-05637985-737c-4d14-b192-5525353d34f8.png)
+
+![image](https://user-images.githubusercontent.com/62273292/168568739-7a7aa425-e293-49df-844a-20d3def26ab2.png)
+
+
+xảy ra lỗi k kết nối được máy chủ
+
+![image](https://user-images.githubusercontent.com/62273292/168570478-e556b5da-07cd-4cb5-b5f0-aaab90b6cb3d.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
