@@ -46,16 +46,27 @@ lưu ý phải cài đặt mail server trước
 
 ![image](https://user-images.githubusercontent.com/62273292/168568647-05637985-737c-4d14-b192-5525353d34f8.png)
 
-![image](https://user-images.githubusercontent.com/62273292/168568739-7a7aa425-e293-49df-844a-20d3def26ab2.png)
-
 
 xảy ra lỗi k kết nối được máy chủ
 
 ![image](https://user-images.githubusercontent.com/62273292/168570478-e556b5da-07cd-4cb5-b5f0-aaab90b6cb3d.png)
 
+Tạo record
+
+![image](https://user-images.githubusercontent.com/62273292/168717801-0a55e855-2a9f-4a2f-8903-c6eacfe09ce1.png)
+
+Thêm tài khoản email
+
+![image](https://user-images.githubusercontent.com/62273292/168721291-c0ba3e1c-4829-41dd-8291-eb68b7db554a.png)
 
 
+test gửi
 
+![image](https://user-images.githubusercontent.com/62273292/168721234-66b6a154-6c99-43b8-b91b-f5987bc2d974.png)
+
+
+test nhận
+![image](https://user-images.githubusercontent.com/62273292/168721163-6e0757b5-c5ee-4899-8ada-5f54aea0c39b.png)
 
 
 
